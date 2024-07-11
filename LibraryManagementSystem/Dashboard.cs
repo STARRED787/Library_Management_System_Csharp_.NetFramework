@@ -21,5 +21,10 @@ namespace LibraryManagementSystem
         {
 
         }
+
+        private void booksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
