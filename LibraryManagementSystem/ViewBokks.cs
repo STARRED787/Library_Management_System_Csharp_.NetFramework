@@ -158,7 +158,69 @@ namespace LibraryManagementSystem
                 conn.Close();
             }
         }
+
+        private void bt_refresh_Click(object sender, EventArgs e)
+        {
+            string connectionString = @"Data Source=DESKTOP-LDJQNC1\SQLEXPRESS;Initial Catalog=LibManagementSystem;Integrated Security=True";
+            string sql = "SELECT Book_Id, Book_Name, Book_Author, Book_Publication, Purchase_Date, Book_Price, Book_Quantity FROM AddBooksTB";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    SqlDataAdapter da = new SqlDataAdapter(sql, conn);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    dgv_addBooks.DataSource = dt;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void tb_bnameS_TextChanged(object sender, EventArgs e)
+        {
+            string searchText = tb_bnameS.Text.Trim();
+
+            // Establish SQL connection
+            using (SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-LDJQNC1\SQLEXPRESS;Initial Catalog=LibManagementSystem;Integrated Security=True"))
+            {
+                conn.Open();
+
+                // SQL query with parameter for searching
+                string sql = "SELECT Book_Id, Book_Name, Book_Author, Book_Publication, Purchase_Date, Book_Price, Book_Quantity FROM AddBooksTB WHERE Book_Name LIKE @searchText";
+
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@searchText", "%" + searchText + "%");
+
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    DataTable table = new DataTable();
+                    adapter.Fill(table);
+
+                    dgv_addBooks.DataSource = table;
+                }
+            }
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            tb_bookId.Clear();
+            tb_bookname.Clear();
+            tb_bookauth.Clear();
+            tb_bookpub.Clear();
+            dtp_bookdate.Value = DateTime.Now;
+            tb_bookprice.Clear();
+            tb_bookquantity.Clear();
+        }
     }
-}
+
+        }
+    
+
     
 
