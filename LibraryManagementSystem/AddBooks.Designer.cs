@@ -44,12 +44,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tb_bookname = new System.Windows.Forms.TextBox();
+            this.tb_bookauth = new System.Windows.Forms.TextBox();
+            this.tb_bookpub = new System.Windows.Forms.TextBox();
+            this.dtp_bookdate = new System.Windows.Forms.DateTimePicker();
+            this.tb_bookprice = new System.Windows.Forms.TextBox();
+            this.tb_bookquantity = new System.Windows.Forms.TextBox();
             this.bt_save = new System.Windows.Forms.Button();
             this.bt_clear = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -100,6 +100,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(24, 24);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -110,18 +111,19 @@
             this.pictureBox2.Size = new System.Drawing.Size(29, 21);
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.panel3.Controls.Add(this.bt_clear);
             this.panel3.Controls.Add(this.bt_save);
-            this.panel3.Controls.Add(this.textBox5);
-            this.panel3.Controls.Add(this.textBox4);
-            this.panel3.Controls.Add(this.dateTimePicker1);
-            this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.tb_bookquantity);
+            this.panel3.Controls.Add(this.tb_bookprice);
+            this.panel3.Controls.Add(this.dtp_bookdate);
+            this.panel3.Controls.Add(this.tb_bookpub);
+            this.panel3.Controls.Add(this.tb_bookauth);
+            this.panel3.Controls.Add(this.tb_bookname);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label6);
@@ -222,47 +224,49 @@
             this.label8.TabIndex = 5;
             this.label8.Text = "Book Quantity";
             // 
-            // textBox1
+            // tb_bookname
             // 
-            this.textBox1.Location = new System.Drawing.Point(197, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(244, 20);
-            this.textBox1.TabIndex = 6;
+            this.tb_bookname.Location = new System.Drawing.Point(197, 35);
+            this.tb_bookname.Name = "tb_bookname";
+            this.tb_bookname.Size = new System.Drawing.Size(244, 20);
+            this.tb_bookname.TabIndex = 6;
             // 
-            // textBox2
+            // tb_bookauth
             // 
-            this.textBox2.Location = new System.Drawing.Point(197, 82);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(244, 20);
-            this.textBox2.TabIndex = 7;
+            this.tb_bookauth.Location = new System.Drawing.Point(197, 82);
+            this.tb_bookauth.Name = "tb_bookauth";
+            this.tb_bookauth.Size = new System.Drawing.Size(244, 20);
+            this.tb_bookauth.TabIndex = 7;
             // 
-            // textBox3
+            // tb_bookpub
             // 
-            this.textBox3.Location = new System.Drawing.Point(197, 132);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(244, 20);
-            this.textBox3.TabIndex = 8;
+            this.tb_bookpub.Location = new System.Drawing.Point(197, 132);
+            this.tb_bookpub.Name = "tb_bookpub";
+            this.tb_bookpub.Size = new System.Drawing.Size(244, 20);
+            this.tb_bookpub.TabIndex = 8;
             // 
-            // dateTimePicker1
+            // dtp_bookdate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(197, 180);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(244, 20);
-            this.dateTimePicker1.TabIndex = 9;
+            this.dtp_bookdate.Location = new System.Drawing.Point(197, 180);
+            this.dtp_bookdate.Name = "dtp_bookdate";
+            this.dtp_bookdate.Size = new System.Drawing.Size(244, 20);
+            this.dtp_bookdate.TabIndex = 9;
+            this.dtp_bookdate.ValueChanged += new System.EventHandler(this.dtp_bookdate_ValueChanged);
+            this.dtp_bookdate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dtp_bookdate_KeyDown);
             // 
-            // textBox4
+            // tb_bookprice
             // 
-            this.textBox4.Location = new System.Drawing.Point(197, 230);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(244, 20);
-            this.textBox4.TabIndex = 10;
+            this.tb_bookprice.Location = new System.Drawing.Point(197, 230);
+            this.tb_bookprice.Name = "tb_bookprice";
+            this.tb_bookprice.Size = new System.Drawing.Size(244, 20);
+            this.tb_bookprice.TabIndex = 10;
             // 
-            // textBox5
+            // tb_bookquantity
             // 
-            this.textBox5.Location = new System.Drawing.Point(197, 277);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(244, 20);
-            this.textBox5.TabIndex = 11;
+            this.tb_bookquantity.Location = new System.Drawing.Point(197, 277);
+            this.tb_bookquantity.Name = "tb_bookquantity";
+            this.tb_bookquantity.Size = new System.Drawing.Size(244, 20);
+            this.tb_bookquantity.TabIndex = 11;
             // 
             // bt_save
             // 
@@ -274,6 +278,7 @@
             this.bt_save.TabIndex = 12;
             this.bt_save.Text = "Save";
             this.bt_save.UseVisualStyleBackColor = false;
+            this.bt_save.Click += new System.EventHandler(this.bt_save_Click);
             // 
             // bt_clear
             // 
@@ -325,12 +330,12 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button bt_save;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_bookquantity;
+        private System.Windows.Forms.TextBox tb_bookprice;
+        private System.Windows.Forms.DateTimePicker dtp_bookdate;
+        private System.Windows.Forms.TextBox tb_bookpub;
+        private System.Windows.Forms.TextBox tb_bookauth;
+        private System.Windows.Forms.TextBox tb_bookname;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
