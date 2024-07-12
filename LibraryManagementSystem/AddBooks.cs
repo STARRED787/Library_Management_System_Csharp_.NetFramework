@@ -60,35 +60,44 @@ namespace LibraryManagementSystem
                 return;
             }
 
-            if (!int.TryParse(tb_bookprice.Text, out int price))
+            if (!int.TryParse(tb_bookId.Text, out int Id))
             {
-                MessageBox.Show("Invalid Price", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Invalid Book Id. Please enter a valid integer.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!decimal.TryParse(tb_bookprice.Text, out decimal price))
+            {
+                MessageBox.Show("Invalid Price. Please enter a valid number for Book Price.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             if (!int.TryParse(tb_bookquantity.Text, out int quantity))
             {
-                MessageBox.Show("Invalid Quantity", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Invalid Quantity. Please enter a valid integer for Book Quantity.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-LDJQNC1\SQLEXPRESS;Initial Catalog=LibManagementSystem;Integrated Security=True");
-            conn.Open();
+            // Establish SQL connection
+            string connectionString = @"Data Source=DESKTOP-LDJQNC1\SQLEXPRESS;Initial Catalog=LibManagementSystem;Integrated Security=True";
+
+            SqlConnection conn = new SqlConnection(connectionString); // Declare SqlConnection object outside try block
 
             try
             {
+                conn.Open(); // Open connection here
+
                 // SQL command with parameters
-                string sql = "INSERT INTO AddBookTB (Book_Name, Book_Author, Book_Publication, Purchase_Date, Book_Price, Book_Quantity) " +
-                             "VALUES (@Book_Name, @Book_Author, @Book_Publication, @Purchase_Date, @Book_Price, @Book_Quantity)";
+                string sql = "INSERT INTO AddBooksTB (Book_Id, Book_Name, Book_Author, Book_Publication, Purchase_Date, Book_Price, Book_Quantity) " +
+                             "VALUES (@Book_Id, @Book_Name, @Book_Author, @Book_Publication, @Purchase_Date, @Book_Price, @Book_Quantity)";
 
                 using (SqlCommand cmd = new SqlCommand(sql, conn))
                 {
+                    cmd.Parameters.AddWithValue("@Book_Id", Id);
                     cmd.Parameters.AddWithValue("@Book_Name", tb_bookname.Text);
                     cmd.Parameters.AddWithValue("@Book_Author", tb_bookauth.Text);
                     cmd.Parameters.AddWithValue("@Book_Publication", tb_bookpub.Text);
                     cmd.Parameters.AddWithValue("@Purchase_Date", dtp_bookdate.Value);
-
-                    // Assuming 'price' and 'quantity' are defined and assigned earlier code
                     cmd.Parameters.AddWithValue("@Book_Price", price);
                     cmd.Parameters.AddWithValue("@Book_Quantity", quantity);
 
@@ -97,16 +106,17 @@ namespace LibraryManagementSystem
                     MessageBox.Show("Record Saved Successfully", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred: " + ex.Message);
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
-                conn.Close();
+                conn.Close(); // Close connection in finally block to ensure it's always closed
             }
-        }         
-        
+
+        }
     }
 }
+        
+

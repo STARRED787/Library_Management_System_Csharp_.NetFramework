@@ -37,5 +37,11 @@ namespace LibraryManagementSystem
             ab.Show();
       
         }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            ViewBokks ab = new ViewBokks();
+            ab.Show();
+        }
     }
 }
