@@ -37,6 +37,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.tb_bookId = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.bt_clear = new System.Windows.Forms.Button();
             this.bt_save = new System.Windows.Forms.Button();
             this.tb_bookquantity = new System.Windows.Forms.TextBox();
@@ -52,8 +54,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.tb_bookId = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -159,6 +159,24 @@
             this.panel3.Size = new System.Drawing.Size(474, 382);
             this.panel3.TabIndex = 2;
             // 
+            // tb_bookId
+            // 
+            this.tb_bookId.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_bookId.Location = new System.Drawing.Point(197, 14);
+            this.tb_bookId.Name = "tb_bookId";
+            this.tb_bookId.Size = new System.Drawing.Size(244, 23);
+            this.tb_bookId.TabIndex = 15;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(29, 17);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(68, 20);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "Book ID";
+            // 
             // bt_clear
             // 
             this.bt_clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -169,6 +187,7 @@
             this.bt_clear.TabIndex = 13;
             this.bt_clear.Text = "Clear";
             this.bt_clear.UseVisualStyleBackColor = false;
+            this.bt_clear.Click += new System.EventHandler(this.bt_clear_Click);
             // 
             // bt_save
             // 
@@ -300,24 +319,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(337, 382);
             this.panel4.TabIndex = 3;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(29, 17);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(68, 20);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "Book ID";
-            // 
-            // tb_bookId
-            // 
-            this.tb_bookId.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_bookId.Location = new System.Drawing.Point(197, 14);
-            this.tb_bookId.Name = "tb_bookId";
-            this.tb_bookId.Size = new System.Drawing.Size(244, 23);
-            this.tb_bookId.TabIndex = 15;
             // 
             // AddBooks
             // 

@@ -116,6 +116,17 @@ namespace LibraryManagementSystem
             }
 
         }
+
+        private void bt_clear_Click(object sender, EventArgs e)
+        {
+            tb_bookId.Clear();
+            tb_bookname.Clear();
+            tb_bookauth.Clear();
+            tb_bookpub.Clear();
+            dtp_bookdate.Value = DateTime.Now;
+            tb_bookprice.Clear();
+            tb_bookquantity.Clear();
+        }
     }
 }
         
