@@ -82,11 +82,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewBokks.cs">
+    <Compile Include="ViewBooks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewBokks.Designer.cs">
-      <DependentUpon>ViewBokks.cs</DependentUpon>
+    <Compile Include="ViewBooks.Designer.cs">
+      <DependentUpon>ViewBooks.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewMembers.cs">
       <SubType>Form</SubType>
@@ -115,8 +115,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ViewBokks.resx">
-      <DependentUpon>ViewBokks.cs</DependentUpon>
+    <EmbeddedResource Include="ViewBooks.resx">
+      <DependentUpon>ViewBooks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewMembers.resx">
       <DependentUpon>ViewMembers.cs</DependentUpon>

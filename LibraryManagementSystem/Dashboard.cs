@@ -43,5 +43,10 @@ namespace LibraryManagementSystem
             ViewBooks ab = new ViewBooks();
             ab.Show();
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

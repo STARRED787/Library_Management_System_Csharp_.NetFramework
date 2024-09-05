@@ -54,6 +54,7 @@
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(101, 54);
             this.toolStripMenuItem1.Text = "Books";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -90,7 +91,7 @@
             this.toolStripMenuItem5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem5.Image")));
             this.toolStripMenuItem5.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(200, 46);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(204, 46);
             this.toolStripMenuItem5.Text = "Add Members";
             // 
             // toolStripMenuItem6
@@ -98,7 +99,7 @@
             this.toolStripMenuItem6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem6.Image")));
             this.toolStripMenuItem6.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(200, 46);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(204, 46);
             this.toolStripMenuItem6.Text = "‪View Members Info";
             // 
             // toolStripMenuItem7
