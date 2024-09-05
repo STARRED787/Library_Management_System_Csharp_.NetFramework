@@ -40,7 +40,7 @@ namespace LibraryManagementSystem
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            ViewBokks ab = new ViewBokks();
+            ViewBooks ab = new ViewBooks();
             ab.Show();
         }
     }

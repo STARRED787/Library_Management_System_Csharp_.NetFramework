@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace LibraryManagementSystem
 {
-    public partial class ViewBokks : Form
+    public partial class ViewBooks : Form
     {
-        public ViewBokks()
+        public ViewBooks()
         {
             InitializeComponent();
         }
@@ -183,7 +183,30 @@ namespace LibraryManagementSystem
 
         private void tb_bnameS_TextChanged(object sender, EventArgs e)
         {
+          
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            tb_bookId.Clear();
+            tb_bookname.Clear();
+            tb_bookauth.Clear();
+            tb_bookpub.Clear();
+            dtp_bookdate.Value = DateTime.Now;
+            tb_bookprice.Clear();
+            tb_bookquantity.Clear();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
             string searchText = tb_bnameS.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(tb_bnameS.Text))
+            {
+                MessageBox.Show("Please enter a Member Name to search.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
             // Establish SQL connection
             using (SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-LDJQNC1\SQLEXPRESS;Initial Catalog=LibManagementSystem;Integrated Security=True"))
@@ -204,18 +227,6 @@ namespace LibraryManagementSystem
                     dgv_addBooks.DataSource = table;
                 }
             }
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            tb_bookId.Clear();
-            tb_bookname.Clear();
-            tb_bookauth.Clear();
-            tb_bookpub.Clear();
-            dtp_bookdate.Value = DateTime.Now;
-            tb_bookprice.Clear();
-            tb_bookquantity.Clear();
         }
     }
 

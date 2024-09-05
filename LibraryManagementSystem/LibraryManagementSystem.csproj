@@ -57,6 +57,12 @@
     <Compile Include="AddBooks.Designer.cs">
       <DependentUpon>AddBooks.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMembers.Designer.cs">
+      <DependentUpon>AddMembers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,8 +88,17 @@
     <Compile Include="ViewBokks.Designer.cs">
       <DependentUpon>ViewBokks.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewMembers.Designer.cs">
+      <DependentUpon>ViewMembers.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddBooks.resx">
       <DependentUpon>AddBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMembers.resx">
+      <DependentUpon>AddMembers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
@@ -102,6 +117,9 @@
     </Compile>
     <EmbeddedResource Include="ViewBokks.resx">
       <DependentUpon>ViewBokks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewMembers.resx">
+      <DependentUpon>ViewMembers.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="LibManagementSystemDataSet.xsc">
       <DependentUpon>LibManagementSystemDataSet.xsd</DependentUpon>
