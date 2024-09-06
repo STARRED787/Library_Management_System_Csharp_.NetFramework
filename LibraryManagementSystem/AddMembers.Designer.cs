@@ -35,6 +35,11 @@
             this.bt_clear = new System.Windows.Forms.Button();
             this.bt_save = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.dtp_memend = new System.Windows.Forms.DateTimePicker();
+            this.label11 = new System.Windows.Forms.Label();
+            this.dtp_memstart = new System.Windows.Forms.DateTimePicker();
+            this.label10 = new System.Windows.Forms.Label();
+            this.cb_memgen = new System.Windows.Forms.ComboBox();
             this.tb_mememail = new System.Windows.Forms.TextBox();
             this.dtp_memdob = new System.Windows.Forms.DateTimePicker();
             this.tb_memcan = new System.Windows.Forms.TextBox();
@@ -53,11 +58,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cb_memgen = new System.Windows.Forms.ComboBox();
-            this.dtp_memstart = new System.Windows.Forms.DateTimePicker();
-            this.label10 = new System.Windows.Forms.Label();
-            this.dtp_memend = new System.Windows.Forms.DateTimePicker();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -72,7 +72,7 @@
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Location = new System.Drawing.Point(0, 103);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(374, 446);
+            this.panel4.Size = new System.Drawing.Size(362, 446);
             this.panel4.TabIndex = 7;
             // 
             // tb_memId
@@ -80,7 +80,7 @@
             this.tb_memId.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_memId.Location = new System.Drawing.Point(212, 18);
             this.tb_memId.Name = "tb_memId";
-            this.tb_memId.Size = new System.Drawing.Size(234, 23);
+            this.tb_memId.Size = new System.Drawing.Size(222, 23);
             this.tb_memId.TabIndex = 15;
             // 
             // label9
@@ -99,7 +99,7 @@
             this.bt_clear.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_clear.Location = new System.Drawing.Point(212, 403);
             this.bt_clear.Name = "bt_clear";
-            this.bt_clear.Size = new System.Drawing.Size(86, 29);
+            this.bt_clear.Size = new System.Drawing.Size(74, 29);
             this.bt_clear.TabIndex = 13;
             this.bt_clear.Text = "Clear";
             this.bt_clear.UseVisualStyleBackColor = false;
@@ -110,7 +110,7 @@
             this.bt_save.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_save.Location = new System.Drawing.Point(85, 403);
             this.bt_save.Name = "bt_save";
-            this.bt_save.Size = new System.Drawing.Size(86, 29);
+            this.bt_save.Size = new System.Drawing.Size(74, 29);
             this.bt_save.TabIndex = 12;
             this.bt_save.Text = "Save";
             this.bt_save.UseVisualStyleBackColor = false;
@@ -144,12 +144,60 @@
             this.panel3.Size = new System.Drawing.Size(465, 443);
             this.panel3.TabIndex = 6;
             // 
+            // dtp_memend
+            // 
+            this.dtp_memend.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.dtp_memend.Location = new System.Drawing.Point(212, 359);
+            this.dtp_memend.Name = "dtp_memend";
+            this.dtp_memend.Size = new System.Drawing.Size(222, 23);
+            this.dtp_memend.TabIndex = 20;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(29, 362);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(170, 20);
+            this.label11.TabIndex = 19;
+            this.label11.Text = "Membership End Date";
+            // 
+            // dtp_memstart
+            // 
+            this.dtp_memstart.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.dtp_memstart.Location = new System.Drawing.Point(214, 315);
+            this.dtp_memstart.Name = "dtp_memstart";
+            this.dtp_memstart.Size = new System.Drawing.Size(222, 23);
+            this.dtp_memstart.TabIndex = 18;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(29, 318);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(179, 20);
+            this.label10.TabIndex = 17;
+            this.label10.Text = "Membership Start Date";
+            // 
+            // cb_memgen
+            // 
+            this.cb_memgen.FormattingEnabled = true;
+            this.cb_memgen.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.cb_memgen.Location = new System.Drawing.Point(214, 233);
+            this.cb_memgen.Name = "cb_memgen";
+            this.cb_memgen.Size = new System.Drawing.Size(219, 21);
+            this.cb_memgen.TabIndex = 16;
+            this.cb_memgen.Text = "Select";
+            // 
             // tb_mememail
             // 
             this.tb_mememail.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.tb_mememail.Location = new System.Drawing.Point(212, 273);
             this.tb_mememail.Name = "tb_mememail";
-            this.tb_mememail.Size = new System.Drawing.Size(234, 23);
+            this.tb_mememail.Size = new System.Drawing.Size(222, 23);
             this.tb_mememail.TabIndex = 11;
             // 
             // dtp_memdob
@@ -157,7 +205,7 @@
             this.dtp_memdob.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.dtp_memdob.Location = new System.Drawing.Point(212, 191);
             this.dtp_memdob.Name = "dtp_memdob";
-            this.dtp_memdob.Size = new System.Drawing.Size(234, 23);
+            this.dtp_memdob.Size = new System.Drawing.Size(222, 23);
             this.dtp_memdob.TabIndex = 9;
             // 
             // tb_memcan
@@ -165,7 +213,7 @@
             this.tb_memcan.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.tb_memcan.Location = new System.Drawing.Point(212, 146);
             this.tb_memcan.Name = "tb_memcan";
-            this.tb_memcan.Size = new System.Drawing.Size(234, 23);
+            this.tb_memcan.Size = new System.Drawing.Size(222, 23);
             this.tb_memcan.TabIndex = 8;
             // 
             // tb_memadd
@@ -173,7 +221,7 @@
             this.tb_memadd.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.tb_memadd.Location = new System.Drawing.Point(212, 99);
             this.tb_memadd.Name = "tb_memadd";
-            this.tb_memadd.Size = new System.Drawing.Size(234, 23);
+            this.tb_memadd.Size = new System.Drawing.Size(222, 23);
             this.tb_memadd.TabIndex = 7;
             // 
             // tb_memname
@@ -181,7 +229,7 @@
             this.tb_memname.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_memname.Location = new System.Drawing.Point(212, 55);
             this.tb_memname.Name = "tb_memname";
-            this.tb_memname.Size = new System.Drawing.Size(234, 23);
+            this.tb_memname.Size = new System.Drawing.Size(222, 23);
             this.tb_memname.TabIndex = 6;
             // 
             // label8
@@ -253,7 +301,7 @@
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Location = new System.Drawing.Point(0, 30);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(816, 85);
+            this.panel2.Size = new System.Drawing.Size(813, 85);
             this.panel2.TabIndex = 5;
             // 
             // label2
@@ -271,7 +319,7 @@
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(374, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(79, 80);
+            this.pictureBox3.Size = new System.Drawing.Size(67, 80);
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
@@ -291,7 +339,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(755, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 21);
+            this.pictureBox1.Size = new System.Drawing.Size(49, 21);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -317,54 +365,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(816, 47);
             this.panel1.TabIndex = 4;
-            // 
-            // cb_memgen
-            // 
-            this.cb_memgen.FormattingEnabled = true;
-            this.cb_memgen.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.cb_memgen.Location = new System.Drawing.Point(214, 233);
-            this.cb_memgen.Name = "cb_memgen";
-            this.cb_memgen.Size = new System.Drawing.Size(231, 21);
-            this.cb_memgen.TabIndex = 16;
-            this.cb_memgen.Text = "Select";
-            // 
-            // dtp_memstart
-            // 
-            this.dtp_memstart.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.dtp_memstart.Location = new System.Drawing.Point(214, 315);
-            this.dtp_memstart.Name = "dtp_memstart";
-            this.dtp_memstart.Size = new System.Drawing.Size(234, 23);
-            this.dtp_memstart.TabIndex = 18;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(29, 318);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(179, 20);
-            this.label10.TabIndex = 17;
-            this.label10.Text = "Membership Start Date";
-            // 
-            // dtp_memend
-            // 
-            this.dtp_memend.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.dtp_memend.Location = new System.Drawing.Point(212, 359);
-            this.dtp_memend.Name = "dtp_memend";
-            this.dtp_memend.Size = new System.Drawing.Size(234, 23);
-            this.dtp_memend.TabIndex = 20;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(29, 362);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(170, 20);
-            this.label11.TabIndex = 19;
-            this.label11.Text = "Membership End Date";
             // 
             // AddMembers
             // 

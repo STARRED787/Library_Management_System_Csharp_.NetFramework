@@ -69,6 +69,18 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeleveryBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleveryBooks.Designer.cs">
+      <DependentUpon>DeleveryBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IssueBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssueBooks.Designer.cs">
+      <DependentUpon>IssueBooks.cs</DependentUpon>
+    </Compile>
     <Compile Include="LibManagementSystemDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -102,6 +114,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleveryBooks.resx">
+      <DependentUpon>DeleveryBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssueBooks.resx">
+      <DependentUpon>IssueBooks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Loging.resx">
       <DependentUpon>Loging.cs</DependentUpon>

@@ -48,5 +48,23 @@ namespace LibraryManagementSystem
         {
 
         }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            IssueBooks ab = new IssueBooks();
+            ab.Show();
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            DeleveryBooks ab = new DeleveryBooks();
+            ab.Show();
+
+        }
     }
 }

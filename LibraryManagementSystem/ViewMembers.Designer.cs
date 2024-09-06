@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewMembers));
             this.dgv_addmembers = new Guna.UI.WinForms.GunaDataGridView();
             this.label9 = new System.Windows.Forms.Label();
@@ -40,9 +40,28 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.dtp_memend = new System.Windows.Forms.DateTimePicker();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dtp_memstart = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
             this.tb_bookquantity = new System.Windows.Forms.TextBox();
+            this.tb_mememail = new System.Windows.Forms.TextBox();
+            this.cb_memgen = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tb_memId = new System.Windows.Forms.TextBox();
+            this.dtp_memdob = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tb_memcan = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.tb_memadd = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tb_memname = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -53,25 +72,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.libManagementSystemDataSet = new LibraryManagementSystem.LibManagementSystemDataSet();
             this.addBookTBBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dtp_memend = new System.Windows.Forms.DateTimePicker();
-            this.label11 = new System.Windows.Forms.Label();
-            this.dtp_memstart = new System.Windows.Forms.DateTimePicker();
-            this.label10 = new System.Windows.Forms.Label();
-            this.cb_memgen = new System.Windows.Forms.ComboBox();
-            this.tb_memId = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tb_mememail = new System.Windows.Forms.TextBox();
-            this.dtp_memdob = new System.Windows.Forms.DateTimePicker();
-            this.tb_memcan = new System.Windows.Forms.TextBox();
-            this.tb_memadd = new System.Windows.Forms.TextBox();
-            this.tb_memname = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_addmembers)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -85,30 +85,30 @@
             // 
             // dgv_addmembers
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.dgv_addmembers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgv_addmembers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_addmembers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_addmembers.BackgroundColor = System.Drawing.Color.White;
             this.dgv_addmembers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_addmembers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv_addmembers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_addmembers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_addmembers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_addmembers.ColumnHeadersHeight = 21;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_addmembers.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_addmembers.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_addmembers.EnableHeadersVisualStyles = false;
             this.dgv_addmembers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_addmembers.Location = new System.Drawing.Point(26, 196);
@@ -227,6 +227,54 @@
             this.panel3.Size = new System.Drawing.Size(871, 247);
             this.panel3.TabIndex = 17;
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(590, 205);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(96, 29);
+            this.button4.TabIndex = 21;
+            this.button4.Text = "Refresh";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(401, 169);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(170, 20);
+            this.label11.TabIndex = 37;
+            this.label11.Text = "Membership End Date";
+            // 
+            // dtp_memend
+            // 
+            this.dtp_memend.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.dtp_memend.Location = new System.Drawing.Point(605, 166);
+            this.dtp_memend.Name = "dtp_memend";
+            this.dtp_memend.Size = new System.Drawing.Size(234, 23);
+            this.dtp_memend.TabIndex = 38;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(401, 134);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(179, 20);
+            this.label10.TabIndex = 35;
+            this.label10.Text = "Membership Start Date";
+            // 
+            // dtp_memstart
+            // 
+            this.dtp_memstart.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.dtp_memstart.Location = new System.Drawing.Point(605, 127);
+            this.dtp_memstart.Name = "dtp_memstart";
+            this.dtp_memstart.Size = new System.Drawing.Size(234, 23);
+            this.dtp_memstart.TabIndex = 36;
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -247,6 +295,36 @@
             this.tb_bookquantity.Size = new System.Drawing.Size(244, 23);
             this.tb_bookquantity.TabIndex = 11;
             // 
+            // tb_mememail
+            // 
+            this.tb_mememail.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.tb_mememail.Location = new System.Drawing.Point(605, 89);
+            this.tb_mememail.Name = "tb_mememail";
+            this.tb_mememail.Size = new System.Drawing.Size(234, 23);
+            this.tb_mememail.TabIndex = 31;
+            // 
+            // cb_memgen
+            // 
+            this.cb_memgen.FormattingEnabled = true;
+            this.cb_memgen.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.cb_memgen.Location = new System.Drawing.Point(605, 51);
+            this.cb_memgen.Name = "cb_memgen";
+            this.cb_memgen.Size = new System.Drawing.Size(231, 21);
+            this.cb_memgen.TabIndex = 34;
+            this.cb_memgen.Text = "Select";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(401, 92);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 20);
+            this.label4.TabIndex = 26;
+            this.label4.Text = "Email";
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -256,6 +334,106 @@
             this.label8.Size = new System.Drawing.Size(115, 20);
             this.label8.TabIndex = 5;
             this.label8.Text = "Book Quantity";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(401, 52);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(62, 20);
+            this.label7.TabIndex = 25;
+            this.label7.Text = "Gender";
+            // 
+            // tb_memId
+            // 
+            this.tb_memId.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_memId.Location = new System.Drawing.Point(144, 17);
+            this.tb_memId.Name = "tb_memId";
+            this.tb_memId.Size = new System.Drawing.Size(234, 23);
+            this.tb_memId.TabIndex = 33;
+            // 
+            // dtp_memdob
+            // 
+            this.dtp_memdob.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.dtp_memdob.Location = new System.Drawing.Point(605, 17);
+            this.dtp_memdob.Name = "dtp_memdob";
+            this.dtp_memdob.Size = new System.Drawing.Size(234, 23);
+            this.dtp_memdob.TabIndex = 30;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 14);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(91, 20);
+            this.label3.TabIndex = 32;
+            this.label3.Text = "Member ID";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(401, 20);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(104, 20);
+            this.label6.TabIndex = 24;
+            this.label6.Text = "Date Of Birth";
+            // 
+            // tb_memcan
+            // 
+            this.tb_memcan.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.tb_memcan.Location = new System.Drawing.Point(144, 135);
+            this.tb_memcan.Name = "tb_memcan";
+            this.tb_memcan.Size = new System.Drawing.Size(234, 23);
+            this.tb_memcan.TabIndex = 29;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(12, 59);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(117, 20);
+            this.label13.TabIndex = 21;
+            this.label13.Text = "Member Name";
+            // 
+            // tb_memadd
+            // 
+            this.tb_memadd.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.tb_memadd.Location = new System.Drawing.Point(144, 93);
+            this.tb_memadd.Name = "tb_memadd";
+            this.tb_memadd.Size = new System.Drawing.Size(234, 23);
+            this.tb_memadd.TabIndex = 28;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(12, 135);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(126, 20);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Cantact Number";
+            // 
+            // tb_memname
+            // 
+            this.tb_memname.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_memname.Location = new System.Drawing.Point(144, 56);
+            this.tb_memname.Name = "tb_memname";
+            this.tb_memname.Size = new System.Drawing.Size(234, 23);
+            this.tb_memname.TabIndex = 27;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(12, 96);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(73, 20);
+            this.label12.TabIndex = 22;
+            this.label12.Text = " Address";
             // 
             // panel1
             // 
@@ -342,184 +520,6 @@
             // 
             this.addBookTBBindingSource.DataMember = "AddBookTB";
             this.addBookTBBindingSource.DataSource = this.libManagementSystemDataSet;
-            // 
-            // dtp_memend
-            // 
-            this.dtp_memend.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.dtp_memend.Location = new System.Drawing.Point(605, 166);
-            this.dtp_memend.Name = "dtp_memend";
-            this.dtp_memend.Size = new System.Drawing.Size(234, 23);
-            this.dtp_memend.TabIndex = 38;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(401, 169);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(170, 20);
-            this.label11.TabIndex = 37;
-            this.label11.Text = "Membership End Date";
-            // 
-            // dtp_memstart
-            // 
-            this.dtp_memstart.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.dtp_memstart.Location = new System.Drawing.Point(605, 127);
-            this.dtp_memstart.Name = "dtp_memstart";
-            this.dtp_memstart.Size = new System.Drawing.Size(234, 23);
-            this.dtp_memstart.TabIndex = 36;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(401, 134);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(179, 20);
-            this.label10.TabIndex = 35;
-            this.label10.Text = "Membership Start Date";
-            // 
-            // cb_memgen
-            // 
-            this.cb_memgen.FormattingEnabled = true;
-            this.cb_memgen.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.cb_memgen.Location = new System.Drawing.Point(605, 51);
-            this.cb_memgen.Name = "cb_memgen";
-            this.cb_memgen.Size = new System.Drawing.Size(231, 21);
-            this.cb_memgen.TabIndex = 34;
-            this.cb_memgen.Text = "Select";
-            // 
-            // tb_memId
-            // 
-            this.tb_memId.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_memId.Location = new System.Drawing.Point(144, 17);
-            this.tb_memId.Name = "tb_memId";
-            this.tb_memId.Size = new System.Drawing.Size(234, 23);
-            this.tb_memId.TabIndex = 33;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 14);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 20);
-            this.label3.TabIndex = 32;
-            this.label3.Text = "Member ID";
-            // 
-            // tb_mememail
-            // 
-            this.tb_mememail.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.tb_mememail.Location = new System.Drawing.Point(605, 89);
-            this.tb_mememail.Name = "tb_mememail";
-            this.tb_mememail.Size = new System.Drawing.Size(234, 23);
-            this.tb_mememail.TabIndex = 31;
-            // 
-            // dtp_memdob
-            // 
-            this.dtp_memdob.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.dtp_memdob.Location = new System.Drawing.Point(605, 17);
-            this.dtp_memdob.Name = "dtp_memdob";
-            this.dtp_memdob.Size = new System.Drawing.Size(234, 23);
-            this.dtp_memdob.TabIndex = 30;
-            // 
-            // tb_memcan
-            // 
-            this.tb_memcan.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.tb_memcan.Location = new System.Drawing.Point(144, 135);
-            this.tb_memcan.Name = "tb_memcan";
-            this.tb_memcan.Size = new System.Drawing.Size(234, 23);
-            this.tb_memcan.TabIndex = 29;
-            // 
-            // tb_memadd
-            // 
-            this.tb_memadd.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.tb_memadd.Location = new System.Drawing.Point(144, 93);
-            this.tb_memadd.Name = "tb_memadd";
-            this.tb_memadd.Size = new System.Drawing.Size(234, 23);
-            this.tb_memadd.TabIndex = 28;
-            // 
-            // tb_memname
-            // 
-            this.tb_memname.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_memname.Location = new System.Drawing.Point(144, 56);
-            this.tb_memname.Name = "tb_memname";
-            this.tb_memname.Size = new System.Drawing.Size(234, 23);
-            this.tb_memname.TabIndex = 27;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(401, 92);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 20);
-            this.label4.TabIndex = 26;
-            this.label4.Text = "Email";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(401, 52);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 20);
-            this.label7.TabIndex = 25;
-            this.label7.Text = "Gender";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(401, 20);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(104, 20);
-            this.label6.TabIndex = 24;
-            this.label6.Text = "Date Of Birth";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 135);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(126, 20);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "Cantact Number";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(12, 96);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(73, 20);
-            this.label12.TabIndex = 22;
-            this.label12.Text = " Address";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(12, 59);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(117, 20);
-            this.label13.TabIndex = 21;
-            this.label13.Text = "Member Name";
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(590, 205);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(96, 29);
-            this.button4.TabIndex = 21;
-            this.button4.Text = "Refresh";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // ViewMembers
             // 
