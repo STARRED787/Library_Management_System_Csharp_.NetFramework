@@ -75,6 +75,12 @@
     <Compile Include="DeleveryBooks.Designer.cs">
       <DependentUpon>DeleveryBooks.cs</DependentUpon>
     </Compile>
+    <Compile Include="DetaildBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaildBook.Designer.cs">
+      <DependentUpon>DetaildBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="IssueBooks.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeleveryBooks.resx">
       <DependentUpon>DeleveryBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaildBook.resx">
+      <DependentUpon>DetaildBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IssueBooks.resx">
       <DependentUpon>IssueBooks.cs</DependentUpon>

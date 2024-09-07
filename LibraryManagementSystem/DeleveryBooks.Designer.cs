@@ -50,6 +50,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.dgv_deinfo = new Guna.UI.WinForms.GunaDataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.tb_bookname = new System.Windows.Forms.TextBox();
             this.tb_deltdays = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -74,7 +75,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.tb_bookname = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_deinfo)).BeginInit();
             this.panel3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -325,6 +325,14 @@
             this.panel3.Size = new System.Drawing.Size(852, 335);
             this.panel3.TabIndex = 27;
             // 
+            // tb_bookname
+            // 
+            this.tb_bookname.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.tb_bookname.Location = new System.Drawing.Point(169, 244);
+            this.tb_bookname.Name = "tb_bookname";
+            this.tb_bookname.Size = new System.Drawing.Size(269, 23);
+            this.tb_bookname.TabIndex = 34;
+            // 
             // tb_deltdays
             // 
             this.tb_deltdays.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
@@ -459,6 +467,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(19, 21);
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -468,6 +477,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(24, 21);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label2
             // 
@@ -481,6 +491,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(378, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(75, 66);
@@ -531,6 +542,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
             this.pictureBox4.Location = new System.Drawing.Point(106, 17);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(139, 138);
@@ -541,7 +553,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(116, 235);
+            this.button3.Location = new System.Drawing.Point(127, 238);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(86, 29);
             this.button3.TabIndex = 14;
@@ -572,14 +584,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(327, 335);
             this.panel4.TabIndex = 29;
-            // 
-            // tb_bookname
-            // 
-            this.tb_bookname.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.tb_bookname.Location = new System.Drawing.Point(169, 244);
-            this.tb_bookname.Name = "tb_bookname";
-            this.tb_bookname.Size = new System.Drawing.Size(269, 23);
-            this.tb_bookname.TabIndex = 34;
             // 
             // DeleveryBooks
             // 
